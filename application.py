@@ -14,16 +14,7 @@ def index_page():
 def application():
     """Gets application info"""
 
-    # first_name = request.args.get("firstname")
-    # last_name = request.args.get("lastname")
-    # salary = request.args.get("salary")
-    # job = request.args.get("positions")
-
     return render_template("application-form.html")
-                            # fname=first_name,
-                            # lname=last_name,
-                            # required_salary=salary,
-                            # position=job)
 
 
 @app.route('/application-response')
