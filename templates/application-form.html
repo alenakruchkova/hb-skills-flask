@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Skills-Web{% endblock %}
+
+{% block content%}
+    <h1>Apply For Jobs</h1>
+    <br>
+   	<div>
+    	<h3>Welcome!</h3>
+    
+    	<p>Here at Ubermelon we are always looking for talented individuals to join our teams. We provide an environment that inspires and motivates the best people to choose to work here, where they can reach their fullest potential. We support personal growth and achievements. We dedicate ourselves to creating an experience for all of our associates that is easy, exciting and engaging.  If you see a future at Ubermelon, please apply below!</p>
+
+    	<p>Our application process will take approximately 15 minutes to complete.</p>
+	</div>
+    <br>
+    <form action="/application-response">
+    	<label for="first-name-input">First Name:</label><br>
+    	<input type="text" name="firstname" id="first-name-input"><br>
+    	<label for="last-name-input">Last Name:</label><br>
+    	<input type="text" id="lname" name="lastname" id="last-name-input">
+    	<br>
+        <label for="salary-requirement">Salary Requirement:</label><br>
+    	<input type="text" name="salary" id="salary-requirement">
+    	<br>
+    	<label for="desired-position">Position:</label><br>
+    		<select name="positions" id="desired-positions">
+    			<option value="Software Engineer">Software Engineer</option>
+    			<option value="QA Engineer">QA Engineer</option>
+    			<option value="Product Manager">Product Manager</option>
+    		<select>
+    	<br>
+    	<br>
+    	<label for="button"><input type="submit" name="button" id="button"></label>
+    </form>
+{% endblock %}
